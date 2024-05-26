@@ -1,0 +1,88 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Bar</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <style>
+      .progress {
+        position: relative;
+        height: 30px;
+        background-color: #343a40;
+      }
+
+      .progress-bar {
+        height: 100%;
+        transition: width 0.4s ease;
+      }
+
+      .progress-label {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        font-weight: bold;
+        z-index: 1;
+        transition: left 0.4s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="progress" id="progressContainer">
+        <div
+          class="progress-bar bg-success"
+          id="progressBar"
+          style="width: 40%"></div>
+        <span
+          class="progress-label"
+          id="progressLabel"
+          style="left: 40%; transform: translate(-50%, -50%)"
+          >40%</span
+        >
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      function updateProgressBar(percentage) {
+        const progressBar = document.getElementById("progressBar");
+        const progressLabel = document.getElementById("progressLabel");
+
+        progressBar.style.width = `${percentage}%`;
+        progressLabel.textContent = `${percentage}%`;
+
+        // Ensure the label stays within the bounds of the progress bar
+        const containerWidth =
+          document.getElementById("progressContainer").offsetWidth;
+        console.log(containerWidth);
+        const labelWidth = progressLabel.offsetWidth;
+        console.log(labelWidth);
+        const labelPosition =
+          (percentage / 100) * containerWidth - labelWidth / 2;
+        console.log(labelPosition);
+
+        // Ensure the label doesn't overflow the container
+        if (labelPosition < 0) {
+          progressLabel.style.left = "0";
+          progressLabel.style.transform = "translateX(0)";
+        } else if (labelPosition + labelWidth > containerWidth) {
+          progressLabel.style.left = `${containerWidth - labelWidth}px`;
+          progressLabel.style.transform = "translateX(0)";
+        } else {
+          progressLabel.style.left = `${labelPosition}px`;
+          progressLabel.style.transform = "translateX(-50%)";
+        }
+      }
+
+      // Example of updating the progress bar to 50%
+      updateProgressBar(50);
+    </script>
+  </body>
+</html>

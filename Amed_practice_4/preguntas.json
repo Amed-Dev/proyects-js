@@ -1,0 +1,75 @@
+[
+  {
+    "tema": "Sustantivos",
+    "image": "https://media.gcflearnfree.org/content/6303a30c99e0c41ae06f67f3_08_22_2022/Tipos-de-sustantivos.png",
+    "descripcion": "Preguntas relacionadas con tipos y características de sustantivos en el idioma.",
+    "preguntas": [
+      {
+        "numero": "1",
+        "titulo": "Primitivos",
+        "pregunta": "El sustantivo ___________ no deriva de ningún otro sustantivo",
+        "opciones": ["derivado", "compuesto", "primitivo", "individual"],
+        "correcta": 3
+      },
+      {
+        "numero": "2",
+        "titulo": "Derivados",
+        "pregunta": "Marque la alternativa que no tenga sustantivo.",
+        "opciones": [
+          "Al fin de la batalla",
+          "y muerto el combatiente",
+          "vino hacia él un hombre",
+          "y le dijo:  “¡No mueras, te amo tanto!”"
+        ],
+        "correcta": 4
+      },
+      {
+        "numero": "3",
+        "titulo": "Propios",
+        "pregunta": ". ¿Cuántos sustantivos concretos y abstractos hay respectivamente en: “Por mí se va a la ciudad doliente/ Por mí se va al eterno tormento/ Por mí se va tras la maldita gente/ la justicia mi autor movió, severo, / me hicieron el poder que a todo alcanza.”?",
+        "opciones": ["3 - 3", "2 - 4", "4 - 3", "3 - 4"],
+        "correcta": 1
+      },
+      {
+        "numero": "4",
+        "titulo": "Comunes",
+        "pregunta": "Una de las oraciones tiene un sustantivo abstracto.",
+        "opciones": [
+          "Tras el incendio, la humareda nubló la ciudad",
+          "El aire es vital para la vida",
+          "La esperanza es lo último que se pierde",
+          "Todos iremos al estreno de la película"
+        ],
+        "correcta": 3
+      },
+      {
+        "numero": "5",
+        "titulo": "Concretos",
+        "pregunta": "Pregunta Concretos",
+        "opciones": ["aaaa", "bbbb", "cccc", "dddd"],
+        "correcta": 3
+      },
+      {
+        "numero": "6",
+        "titulo": "Abstractos",
+        "pregunta": "Pregunta Abstractos",
+        "opciones": ["aaaa", "bbbb", "cccc", "dddd"],
+        "correcta": 1
+      },
+      {
+        "numero": "7",
+        "titulo": "Individuales",
+        "pregunta": "Pregunta colectivos",
+        "opciones": ["aaaa", "bbbb", "cccc", "dddd"],
+        "correcta": 2
+      },
+      {
+        "numero": "8",
+        "titulo": "Colectivos",
+        "pregunta": "Pregunta colectivos",
+        "opciones": ["aaaa", "bbbb", "cccc", "dddd"],
+        "correcta": 4
+      }
+    ]
+  }
+]

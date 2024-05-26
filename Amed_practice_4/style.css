@@ -1,0 +1,70 @@
+.progress, #acuraccy-bar {
+  border-radius: 10px;
+}
+
+#progress-bar {
+  border-radius: 0 10px 10px 0;
+}
+
+#acuraccy {
+  position: relative;
+  margin: 0;
+  border-radius: 15px;
+  overflow: visible;
+}
+
+#acuraccy:after {
+  border: 7px solid #e9e9ea;
+  left: auto;
+  right: 0;
+}
+
+#acuraccy #acuraccy-bar {
+  background-color: #00c985;
+  position: absolute;
+  height: 1rem;
+  top: 0;
+  left: 0;
+  transition: width 0.4s ease;
+}
+
+#acuraccy .acuraccy-value {
+  display: inline-block;
+  position: relative;
+}
+#acuraccy .acuraccy-value .acuraccy-label{
+  position: absolute;
+  top: -6px;
+  font-weight: bold;
+  z-index: 1;
+  transition: left 0.4s ease;
+  padding: 4px 5px;
+  background: #fff;
+  width: max-content;
+  height: 1.8rem;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  border-radius: 5px;
+}
+#statistics .card {
+  --bs-card-spacer-y: 0;
+  padding: 6px 0;
+  height: 80px;
+}
+#statistics .card .bg-image{
+  background-image: url(https://cf.quizizz.com/image/student_summary_sprite_full.png);
+    background-size: 328px;
+    width: 68px;
+    height: 72px;
+    position: absolute;
+    bottom: 0;
+}
+#statistics .card .card-title{
+  font-size: 1.9rem;
+  margin-bottom: 0;
+}
+#statistics .card .card-text{
+  font-weight: bold;
+  color: #e9e9eabb;
+}
