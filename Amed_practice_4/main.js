@@ -72,8 +72,16 @@ function closeModal() {
   var modalInstance = bootstrap.Modal.getInstance(modal);
   modalInstance.hide();
 }
+// actualizar el scroll al top
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
 // Generar las preguntas y sus opciones
 function showQuestions(data, startTime, i) {
+  scrollToTop();
   const generateOption = (numero, opcion, value, correcta, score) => `
     <li class="list-group-item list-group-item-action questions">
       <label class="form-check-label w-100 d-flex gap-1" for="radio${value}${numero}">
@@ -89,7 +97,6 @@ function showQuestions(data, startTime, i) {
   let contentBoard = "";
 
   let scorePoints = 20 / questionsTrivia;
-  console.log(scorePoints);
   contentBoard += `
       <h3 class="text-center mt-2">Trivia - ${tema}</h3>
       <div class="progress_container sticky-top p-2 bg-dark">
@@ -304,13 +311,7 @@ function updateAcuraccyBar() {
     progressLabel.style.left = `calc(${progress}% - 18px)`;
   }
 }
-// actualizar el scroll al top
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-}
+
 // avg time
 function calculateAverageResponseTime() {
   const times = Object.values(responseTimes);
@@ -331,17 +332,24 @@ function generateSummaryOption(numero, opcion, value, correcta, selectedValue) {
       ? "list-group-item-success"
       : "list-group-item-danger"
     : "";
+  const correctAnswer = isCorrect ? "list-group-item-success" : "";
 
   return `
-    <li class="list-group-item list-group-item-action questionsSumary ${itemClass}">
+    <li class="list-group-item questionsSumary ${itemClass} ${correctAnswer}">
       <label class="form-check-label w-100 d-flex gap-1" for="radio${value}${numero}">
         <input class="form-check-input me-1" type="radio" name="listGroupRadio${numero}" value="${value}" id="radio-s-${value}${numero}" disabled ${
     isSelected ? "checked" : ""
   }>
         <span class="w-100">${opcion}</span>
-        <span class="msg">${
-          isSelected ? (isCorrect ? "¡Correcto!" : "¡Incorrecto!") : ""
-        }</span>
+        <span class="msg ${
+          isSelected
+            ? isCorrect
+              ? "is-selected is-correct"
+              : "is-selected is-incorrect"
+            : ""
+        } ${!isSelected && isCorrect ? "correct-answer" : ""}">${
+    isSelected ? (isCorrect ? "¡Correcto!" : "¡Incorrecto!") : ""
+  }</span>
       </label>
     </li>
   `;
@@ -401,8 +409,16 @@ function showSummary() {
       </ul>
     `;
   });
-  $$(".questionsSumary input[type='radio']").forEach((input) => {
-    input.disabled = true;
-  });
+
   summaryContainer.innerHTML = contentSumary;
+
+  document.addEventListener(
+    "click",
+    (event) => {
+      if (event.target.closest(".questionsSumary")) {
+        event.preventDefault();
+      }
+    },
+    true
+  );
 }
