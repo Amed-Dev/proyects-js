@@ -13,7 +13,7 @@
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <div class="container">
@@ -51,10 +51,10 @@
           role="tabpanel"
           aria-labelledby="nav-home-tab"
           tabindex="0">
-          <div class="container-fluid w-75 p-4" id="trivia-board">
+          <div class="container-fluid w-100 w-md-75 p-4" id="trivia-board">
             <!-- contenido dinámico -->
           </div>
-          <div class="container-fluid w-75 p-4 d-none" id="sumaryContainer">
+          <div class="container-fluid w-100 w-md-75 p-4 d-none" id="sumaryContainer">
             <!-- Sumary container -->
             <h3 class="text-center mt-2">Trivia - Sustantivos</h3>
             <h5 class="text-center mt-4">Resumen</h5>
@@ -72,9 +72,7 @@
                     aria-valuemin="0"
                     aria-valuemax="100"
                     style="background: #ef3c69">
-                    <div
-                      class="progress-bar"
-                      id="acuraccy-bar"></div>
+                    <div class="progress-bar" id="acuraccy-bar"></div>
                     <div class="acuraccy-value">
                       <div class="acuraccy-label"></div>
                     </div>
@@ -96,7 +94,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col text-center mb-2 fw-bold text-light text-opacity-75">Estadísticas</div>
+                  <div
+                    class="col text-center mb-2 fw-bold text-light text-opacity-75">
+                    Estadísticas
+                  </div>
                   <div
                     class="row row-cols-1 row-cols-md-2 g-4 text-center"
                     id="statistics">
@@ -154,15 +155,15 @@
           </div>
         </div>
         <div
-          class="tab-pane fade"
+          class="tab-pane fade Reset Dark"
           id="nav-exercise2"
           role="tabpanel"
           aria-labelledby="nav-profile-tab"
           tabindex="0">
           <h3 class="text-center mt-2">Elementos Químicos</h3>
-          <div id="elementsChemistryContainer">
+          <main id="elementsChemistryContainer">
             <!-- contenido generado con js -->
-          </div>
+          </main>
         </div>
       </div>
     </div>
@@ -171,6 +172,7 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
+    <script type="module" src="./assets/js/mainPreguntas.js"></script>
+    <script type="module" src="./assets/js/mainElementos.js"></script>
   </body>
 </html>

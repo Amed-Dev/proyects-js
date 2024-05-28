@@ -126,3 +126,4 @@ let song3 = artist3;
 console.log(song3.showDuration(6)); 
 
 /* EXERCISE 6: web de preguntas*/
+// solución en el archivo main.js
