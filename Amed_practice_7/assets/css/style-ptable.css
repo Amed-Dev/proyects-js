@@ -1,0 +1,316 @@
+:root {
+  --periods: 1em;
+  --groups: 18;
+  --min: 768px;
+  --base-vw: 1.8;
+  --minfont: calc(var(--base-vw) * var(--min) / var(--sidebar-shrink) / 100);
+  --groupfactor: calc(1 + (var(--groups) - 18) / 18);
+  --2margin: calc(var(--margin) * 2);
+  --margin: 0.3rem;
+  --element-pad: 0.05rem;
+  --sidebar-shrink: 1;
+  --aspect-ratio: 1vw;
+  --square-vw: 18;
+  --square: calc(var(--square-vw) * var(--aspect-ratio));
+  --grid-space: calc(5 * var(--aspect-ratio));
+  --gridgap: calc(var(--grid-space) * var(--sidebar-shrink) / var(--groups));
+  --fixedgridgap: var(--gridgap);
+  --tab-hover: rgb(45, 190, 252);
+  --border-width: calc(var(--gridgap) / 2);
+  --fixedborderwidth: var(--border-width);
+  --bordercolor: transparent;
+  --tab-active: #589dfe;
+  --divideroutline: #00d;
+  --divider: #00a;
+  --group: #aaa5f3;
+  /* colores de los elementos */
+  --alkali: #6c3b01;
+  --alkaline: #846011;
+  --lanthanoid: #402c17;
+  --actinoid: #732e4c;
+  --transition: #711019;
+  --poor: #003666;
+  --metalloid: #015146;
+  --nonmetal: #3e6418;
+  --noble: #3a2151;
+  --nocategory: #343a40;
+  --divider: #00a;
+  --divideroutline: #00d;
+  --dividerhover: #00b;
+}
+.Dark {
+  --bordercolor: rgba(var(--text), 0.2);
+  --text: 222, 222, 222;
+}
+
+#nav-ptable > * {
+  padding: 0
+    min(
+      (100% - 100 * var(--aspect-ratio)) / 2,
+      (
+          100% - var(--min) / var(--sidebar-shrink) * var(--groupfactor) -
+            var(--2margin)
+        ) / 2
+    );
+}
+
+main,
+ol,
+figure {
+  margin: var(--margin);
+}
+
+ol {
+  list-style-type: none;
+  display: grid;
+  transition: transform 0.6s ease-out, transform-origin 0.6s step-end;
+  grid-template-columns: var(--periods) repeat(var(--groups), minmax(0, 1fr));
+  transform-style: preserve-3d;
+  padding: calc(var(--margin) * 1.5) var(--2margin) var(--2margin) var(--margin);
+  grid-gap: var(--gridgap);
+  transform: perspective(50em);
+  font-size: calc(
+    var(--base-vw) * var(--aspect-ratio) * var(--sidebar-shrink) /
+      var(--groupfactor)
+  );
+  min-width: calc(var(--min) * var(--groupfactor) - 2 * var(--2margin));
+}
+
+ol li > *,
+.Legend > *,
+figure > output > * {
+  line-height: 1;
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol > li,
+.Series > dd,
+.Series > .Metalloid,
+.CompoundDragTarget li {
+  border-color: var(--bordercolor);
+}
+
+ol > * > abbr {
+  font-size: 0.9em;
+}
+ol > * > b {
+  font-size: 0.65em;
+  font-weight: normal;
+}
+
+em,
+data {
+  font-size: 0.55em;
+}
+figure abbr,
+li > abbr {
+  font-weight: 600;
+}
+.Legend,
+ol > li:not(.Tope) {
+  border-width: var(--fixedborderwidth);
+  border-style: solid;
+  outline: 0 solid var(--tab-hover);
+}
+.Legend,
+ol > li {
+  white-space: nowrap;
+  padding: var(--element-pad);
+}
+
+ol > li,
+.Series > dd,
+.Series > .Metalloid,
+.CompoundDragTarget li {
+  border-color: var(--bordercolor);
+}
+
+.KeyRegion {
+  display: flex;
+  overflow-x: hidden;
+  contain: size;
+  grid-column: 4 / span 10;
+  grid-row: 2 / span 3;
+}
+
+.OldSlider {
+  grid-column-end: span 5;
+  grid-row-start: 2;
+}
+
+.Legend,
+ol > li:not(.Tope) {
+  border-width: var(--fixedborderwidth);
+  border-style: solid;
+  outline: 0 solid var(--tab-hover);
+}
+.Legend {
+  border-color: transparent;
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+.Legend,
+ol > li {
+  white-space: nowrap;
+  padding: var(--element-pad);
+}
+
+.Dark a[href]:not(figure *) {
+  color: var(--tab-active);
+}
+.Group > a {
+  font-size: 0.5em;
+  display: block;
+}
+
+footer a,
+.KeyRegion a,
+.Group > a {
+  text-decoration: inherit;
+}
+
+.VerticalInner {
+  background-color: var(--divider);
+  border-color: var(--divideroutline);
+  grid-column-start: 4;
+  grid-row: 7 / span 5;
+}
+
+.Label57to71 {
+  grid-row-start: 7;
+  z-index: 2;
+}
+.Removed6,
+.Removed7,
+.Label57to71,
+.Label89to103 {
+  grid-column-start: 4;
+  pointer-events: none;
+}
+.Label57to71,
+.Label89to103 {
+  font-size: 0.65em;
+  align-self: center;
+  text-align: center;
+}
+
+li.lantánido,
+.Removed6 {
+  grid-row-start: 10;
+}
+.Removed6,
+.Removed7,
+.Label57to71,
+.Label89to103 {
+  grid-column-start: 4;
+  pointer-events: none;
+}
+
+.Removed6,
+.Removed7 {
+  margin-right: var(--fixedgridgap);
+}
+.Period {
+  align-self: center;
+  text-align: right;
+  padding-right: calc(var(--margin) / 2);
+  z-index: 2;
+}
+.Period,
+.Group {
+  color: var(--group);
+  line-height: 1;
+}
+
+li.actínido,
+.Removed7 {
+  grid-row-start: 11;
+}
+.Label89to103 {
+  grid-row-start: 8;
+  z-index: 2;
+}
+.Removed6,
+.Removed7,
+.Label57to71,
+.Label89to103 {
+  grid-column-start: 4;
+  pointer-events: none;
+}
+
+.Label57to71,
+.Label89to103 {
+  font-size: 0.65em;
+  align-self: center;
+  text-align: center;
+}
+
+.Parentheses {
+  grid-column-end: span calc(var(--groups) - 3);
+  font-size: 0.7em;
+  margin: var(--margin) var(--2margin);
+  align-self: center;
+}
+
+.PosterLogo {
+  grid-column: 1 / span 3;
+  grid-row: 9 / span 3;
+}
+
+@supports (font-size: min(1vw, 1vh)) {
+  .Reset {
+    --aspect-ratio: min(1vw, 1.51vh + (var(--groups) - 18) * 0.095vh);
+  }
+
+  :root {
+    --square: calc(
+      var(--square-vw) *
+        max(var(--min) / var(--sidebar-shrink) / 100, var(--aspect-ratio))
+    );
+    --aspect-ratio: min(1vw, 1.183vh + (var(--groups) - 18) * 0.05vh);
+  }
+
+  ol {
+    font-size: max(
+      var(--base-vw) * var(--aspect-ratio) * var(--sidebar-shrink) /
+        var(--groupfactor),
+      var(--minfont) * var(--sidebar-shrink)
+    );
+  }
+}
+
+/* colores de elementos */
+.no-metal {
+  background-color: var(--nonmetal);
+}
+.metaloide {
+  background-color: var(--metalloid);
+}
+.metales-probres {
+  background-color: var(--poor);
+}
+.noble {
+  background-color: var(--noble);
+}
+.transición {
+  background-color: var(--transition);
+}
+
+.alcalino {
+  background-color: var(--alkali);
+}
+.alcalino-térreo {
+  background-color: var(--alkaline);
+}
+.lantánido {
+  background-color: var(--lanthanoid);
+}
+.actínido {
+  background-color: var(--actinoid);
+}
+.uu {
+  background-color: var(--nocategory);
+}
