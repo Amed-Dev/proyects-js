@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Consultorio nutricional</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.freepik.com/512/4647/4647075.png"
+      type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container-fluid overflow-hidden">
+      <div class="row vh-100 overflow-auto">
+        <div
+          class="col-12 col-sm-3 col-xl-2 px-sm-2 px-0 bg-dark d-flex sticky-top text-info-emphasis"
+          id="sidebar">
+          <div
+            class="d-flex flex-sm-column flex-row flex-grow-1 align-items-center align-items-sm-start px-3 pt-4 text-white">
+            <a
+              href="./"
+              class="d-flex align-items-center pb-sm-3 mb-md-0 me-md-auto text-success-emphasis text-decoration-none">
+              <img
+                src="https://cdn-icons-png.freepik.com/512/4647/4647075.png"
+                alt="icon consultorio nutricional"
+                class="ratio-1x1"
+                style="width: 2rem" />
+              <span class="fs-5 ms-2 d-none d-sm-inline">
+                N<span class="d-none d-sm-inline">utrición</span>
+              </span>
+            </a>
+            <ul
+              class="nav nav-pills flex-sm-column flex-row flex-nowrap flex-shrink-1 flex-sm-grow-0 flex-grow-1 mb-sm-auto mb-0 justify-content-center"
+              id="pills-tab"
+              role="tablist"
+              aria-orientation="vertical">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active px-smA-3 px-2"
+                  id="pills-home-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-home"
+                  aria-selected="true">
+                  <i class="fs-5 bi-house"></i>
+                  <span class="ms-1 d-none d-sm-inline">Inicio</span>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link px-smA-3 px-2"
+                  id="pills-pacientes-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-pacientes"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-pacientes"
+                  aria-selected="false">
+                  <i class="bi bi-person-lines-fill"></i>
+                  <span class="ms-1 d-none d-sm-inline">Pacientes</span>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link px-smA-3 px-2"
+                  id="pills-nutricionistas-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-nutricionistas"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-nutricionistas"
+                  aria-selected="false">
+                  <i class="bi bi-person-heart"></i>
+                  <span class="ms-1 d-none d-sm-inline">Nutricionistas</span>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link px-smA-3 px-2"
+                  id="pills-p-alimentacion-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-p-alimentacion"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-p-alimentacion"
+                  aria-selected="false">
+                  <i class="fs-5 bi-table"></i>
+                  <span class="ms-1 d-none d-sm-inline">
+                    Planes de alimentación
+                  </span>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link px-smA-3 px-2"
+                  id="pills-recetas-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-recetas"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-recetas"
+                  aria-selected="false">
+                  <i class="bi bi-receipt"></i>
+                  <span class="ms-1 d-none d-sm-inline">Recetas</span>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link px-smA-3 px-2"
+                  id="pills-alimentos-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-alimentos"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-alimentos"
+                  aria-selected="false">
+                  <i class="bi bi-cup-straw"></i>
+                  <span class="ms-1 d-none d-sm-inline">Alimentos</span>
+                </button>
+              </li>
+            </ul>
+            <div
+              class="dropdown py-sm-4 mt-sm-auto ms-auto ms-sm-0 flex-shrink-1">
+              <a
+                href="#"
+                class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                id="dropdownUser1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img
+                  src="https://avatars.githubusercontent.com/u/116046824?v=4"
+                  alt="hugenerd"
+                  width="28"
+                  height="28"
+                  class="rounded-circle" />
+                <span class="d-none d-sm-inline mx-1">Amed</span>
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-dark text-small shadow"
+                aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="#">Cerrar sesion</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex flex-column h-sm-100">
+          <main class="row overflow-auto">
+            <div class="tab-content col min-vh-100" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="pills-home"
+                role="tabpanel"
+                aria-labelledby="v-pills-home-tab"
+                tabindex="0">
+                <div class="banner text-info-emphasis text-center py-4">
+                  <h1>Consultorio nutricional</h1>
+                  <div class="banner">
+                    <img
+                      src="https://drperezgalaz.com/inicio/wp-content/uploads/2021/03/CARACTERISTICAS-DE-UNA-ALIMENTACION-SALUDABLE-1200x800.jpeg"
+                      class="img-thumbnail img-fluid"
+                      width="400px"
+                      alt="mesa con frutas, verduras y carnes" />
+                  </div>
+                </div>
+                <div class="container-statistics row px-md-5" id="tab-home">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <div class="card border-warning-subtle">
+                      <div class="card-body">
+                        <h5 class="card-title text-warning-emphasis">
+                          Pacientes
+                          <i class="bi bi-person-lines-fill"></i>
+                        </h5>
+                        <p class="card-text">
+                          <span
+                            class="badge rounded-pill text-bg-warning-emphasis fs-6"
+                            id="noPacientes">
+                          </span>
+                          pacientes atendidos.
+                        </p>
+                        <button
+                          type="button"
+                          class="btn btn-warning fw-bold"
+                          data-target="#pills-pacientes">
+                          ver pacientes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card border-info-subtle">
+                      <div class="card-body">
+                        <h5 class="card-title text-info-emphasis">
+                          Nutricionistas
+                          <i class="bi bi-person-heart"></i>
+                        </h5>
+                        <p class="card-text">
+                          Contamos con un total de
+                          <span
+                            class="badge rounded-pill text-bg-info-emphasis fs-6"
+                            id="noNutricionistas">
+                          </span>
+                          profesionales.
+                        </p>
+                        <button
+                          type="button"
+                          class="btn btn-info fw-bold"
+                          data-target="#pills-nutricionistas">
+                          ver nutricionistas
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-pacientes"
+                role="tabpanel"
+                aria-labelledby="pills-pacientes-tab"
+                tabindex="0">
+                <div class="banner text-info-emphasis text-center py-4">
+                  <h1>Pacientes</h1>
+                </div>
+                <div class="container-tb-pacientes px-2">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Género</th>
+                        <th scope="col">Fecha de nacimiento</th>
+                        <th scope="col">Edad</th>
+                        <th scope="col" class="text-center">
+                          Número de evaluaciones
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody id="tb-pacientes"></tbody>
+                  </table>
+                </div>
+                <div
+                  class="modal fade"
+                  id="evaluationsModal"
+                  data-bs-backdrop="static"
+                  data-bs-keyboard="false"
+                  tabindex="-1"
+                  aria-labelledby="staticBackdropLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                          Evaluaciones de paciente:
+                          <span
+                            id="patientName"
+                            class="text-info-emphasis"></span>
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">Nro de evaluación</th>
+                              <th scope="col">Estatura</th>
+                              <th scope="col">Peso</th>
+                              <th scope="col">Cuello</th>
+                              <th scope="col">Pecho</th>
+                              <th scope="col">Cintura</th>
+                              <th scope="col">Cadera</th>
+                            </tr>
+                          </thead>
+                          <tbody id="tb-evaluations"></tbody>
+                        </table>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal">
+                          Cerrar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-nutricionistas"
+                role="tabpanel"
+                aria-labelledby="pills-nutricionistas-tab"
+                tabindex="0">
+                <div class="banner text-info-emphasis text-center py-4">
+                  <h1>Nutricionistas</h1>
+                </div>
+                <div class="container-tb-nutricionistas px-2">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">No Colegiatura</th>
+                        <th scope="col">Especialidades</th>
+                        <th scope="col">Años de experiencia</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tb-nutricionistas"></tbody>
+                  </table>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-p-alimentacion"
+                role="tabpanel"
+                aria-labelledby="pills-p-alimentacion-tab"
+                tabindex="0">
+                ...
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-recetas"
+                role="tabpanel"
+                aria-labelledby="pills-recetas-tab"
+                tabindex="0">
+                ...
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-alimentos"
+                role="tabpanel"
+                aria-labelledby="pills-alimentos-tab"
+                tabindex="0">
+                ...
+              </div>
+            </div>
+          </main>
+          <footer class="row py-4 mt-auto">
+            <div class="col text-center">
+              &copy2024 Made with ❤️ by Amed-Dev
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="./assets/main.js"></script>
+  </body>
+</html>
