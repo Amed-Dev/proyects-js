@@ -1,0 +1,9 @@
+#ondblclick {
+  font-size: 1rem;
+}
+#mouseenter {
+  transition: all 0.4s ease-in;
+}
+#onmouseleave {
+  transition: all 0.4s ease-in;
+}
