@@ -90,7 +90,7 @@ header ul li:last-child:hover {
   gap: 0.5rem;
   flex-wrap: wrap;
 }
-.container-medios-transporte img {
+.container-medios-transporte .draggable {
   width: 100px;
   border: #2780d8 solid 3px;
   border-radius: 10px;
@@ -99,8 +99,11 @@ header ul li:last-child:hover {
   background-color: gainsboro;
   border: #2780d8 solid 4px;
 }
-.container-sombras img {
-  border: #d87f27 dashed 3px;
+.dropzone {
+  width: 100px;
+  border: dashed 4px transparent;
+  border-radius: 10px;
+  transition: background-color 0.3s;
 }
 .flex-1 {
   flex: 1;
@@ -123,7 +126,7 @@ header ul li:last-child:hover {
   display: none;
 }
 .draggable {
-  cursor: move !important;
+  touch-action: none;
   display: block;
   transition: transform 0.5s ease;
 }
@@ -136,7 +139,14 @@ header ul li:last-child:hover {
   color: rgb(75, 211, 60);
   display: none;
 }
-
+.drop-active {
+  border-color: #aaa;
+}
+.drop-target {
+  background-color: lightgoldenrodyellow;
+  border-color: #d87f27;
+  border-style: solid;
+}
 .draggable.is-valid + .valid-icon {
   display: block;
 }
