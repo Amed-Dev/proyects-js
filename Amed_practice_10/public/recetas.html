@@ -26,23 +26,16 @@ Author URL: http://w3layouts.com
 
     <!-- inner banner -->
     <section class="inner-banner py-5">
-      <div class="w3l-breadcrumb py-lg-5">
-        <div class="container pt-5 pb-sm-4 pb-2">
-          <h4 class="inner-text-title font-weight-bold pt-5">Recetas</h4>
-          <ul class="breadcrumbs-custom-path">
-            <li><a href="index.html">Inicio</a></li>
-            <li class="active"><i class="fas fa-angle-right mx-2"></i>Recetas saludables</li>
-          </ul>
-        </div>
-      </div>
     </section>
     <!-- //inner banner -->
 
     <section class="recetas-container" id="recetas">
-      <div
-        id="recipesDetails"
-        class="row gap-4 justify-content-center align-content-center my-4">
-        <!-- contenido generado con js -->
+      <div class="container">
+        <div
+          id="recipesDetails"
+          class="row gap-4 justify-content-center align-content-center my-4">
+          <!-- contenido generado con js -->
+        </div>
       </div>
     </section>
 
@@ -183,6 +176,7 @@ Author URL: http://w3layouts.com
         loadHeader("#recetas").then(() => {
           ThemeToggle();
         });
+        loadInnerBanner("Catalogo de Recetas", "Recetas")
         loadRecipe();
         loadFooter();
       });

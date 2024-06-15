@@ -40,7 +40,7 @@ async function loadFooter() {
 
 async function loadRecipe() {
   try {
-    const response = await fetch("./assets/data/recipes.json");
+    const response = await fetch("/api_v1/recetas");
     if (response.ok) {
       let data = await response.json();
       showRecipes(data);
@@ -56,16 +56,16 @@ async function loadRecipe() {
 function showRecipes(data) {
   //calcular las calorías totales de las recetas
   const calories = (C, P, G) => C * 4 + P * 4 + G * 9;
-  let containerRecipes = document.querySelector("#recipesDetails");
-  let contentRecipes = "";
+  let containerRecipes = $("#recipesDetails");
+
   const recipes = data;
 
   recipes.forEach((recipe) => {
-    let name = recipe[1];
-    let category = recipe[2];
-    let fats = recipe[4];
-    let carbohydrates = recipe[3];
-    let proteins = recipe[5];
+    let name = recipe.nombre;
+    let category = recipe.categoria;
+    let fats = recipe.grasas;
+    let carbohydrates = recipe.carbohidratos;
+    let proteins = recipe.proteinas;
     let totalCalories = calories(carbohydrates, proteins, fats);
     let itemCategory =
       category === "bebida"
@@ -79,32 +79,65 @@ function showRecipes(data) {
         : category === "almuerzo"
         ? { color: "text-bg-secondary" }
         : { color: "text-bg-primary" };
-    contentRecipes += `<div class="card col-3 col-md-6" style="width: 18rem;">
-    <img src="${recipe[6]}" class="card-img-top" alt="${name}">
-    <div class="card-body">
-      <span class="badge rounded-pill ${itemCategory.color} text-capitalize">${category}</span>
-      <p class="card-text fw-bold ">${name}</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Grasas: ${fats} g</li>
-      <li class="list-group-item">Carbohidratos: ${carbohydrates} g</li>
-      <li class="list-group-item">Proteínas: ${proteins} g</li>
-      <li class="list-group-item fw-semibold text-decoration-underline text-success-emphasis ">Calorías totales: ${totalCalories} cal</li>
-    </ul>
-  </div>`;
+
+    let contentRecipes = document.createElement("div");
+    contentRecipes.className = "card col-3 col-md-6";
+    contentRecipes.style.width = "18rem";
+    contentRecipes.innerHTML = `
+      <img src="${recipe.img}" class="card-img-top" alt="${name}" height="175px">
+      <div class="card-body">
+        <span class="badge rounded-pill ${itemCategory.color} text-capitalize">${category}</span>
+        <p class="card-text fw-bold ">${name}</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Grasas: ${fats} g</li>
+        <li class="list-group-item">Carbohidratos: ${carbohydrates} g</li>
+        <li class="list-group-item">Proteínas: ${proteins} g</li>
+        <li class="list-group-item fw-semibold text-decoration-underline text-success-emphasis ">Calorías totales: ${totalCalories} cal</li>
+      </ul>
+    `;
+    let $contentRecipes = $(contentRecipes);
+    containerRecipes.append($contentRecipes);
   });
-  containerRecipes.innerHTML = contentRecipes;
+}
+
+function loadInnerBanner(title, currentSection) {
+  let breadCrumb = document.createElement("div");
+  breadCrumb.className = "w3l-breadcrumb py-lg-5";
+  let container = document.createElement("div");
+  container.className = "container pt-5 pb-sm-4 pb-2";
+
+  let h4 = document.createElement("h4");
+  h4.className = "inner-text-title font-weight-bold pt-5";
+  h4.innerText = title;
+  container.appendChild(h4);
+  let listNavContainer = document.createElement("div");
+  listNavContainer.className = "my-3 d-flex justify-content-center";
+
+  let listNav = document.createElement("ul");
+  listNav.className = "breadcrumbs-custom-path d-flex gap-2";
+
+  let defaultItem = document.createElement("li");
+  defaultItem.innerHTML = '<a href="index.html">Inicio</a>';
+  listNav.appendChild(defaultItem);
+  let currentItem = document.createElement("li");
+  currentItem.innerHTML = `<i class="fas fa-angle-right me-2"></i>${currentSection}`;
+  listNav.appendChild(currentItem);
+  listNavContainer.appendChild(listNav);
+  container.appendChild(listNavContainer);
+  breadCrumb.appendChild(container);
+
+  document.querySelector(".inner-banner").appendChild(breadCrumb);
 }
 
 function initializeSliders() {
   if (typeof $.fn.zoomSlider !== "undefined") {
-    console.log("Initializing zoomSlider...");
     $("#demo-1").zoomSlider({
       src: [
-        "./assets/img/banner1.jpg",
-        "./assets/img/banner2.jpg",
-        "./assets/img/banner3.jpg",
-        "./assets/img/banner4.jpg",
+        "./assets/img/banner/banner1.jpg",
+        "./assets/img/banner/banner2.jpg",
+        "./assets/img/banner/banner3.jpg",
+        "./assets/img/banner/banner4.jpg",
       ],
       overlay: "plain",
     });
