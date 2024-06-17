@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link
+      rel="shortcut icon"
+      href="https://github.com/Amed-Dev/amedpereda/blob/main/public/favicon.png?raw=true"
+      type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>URL shortener</title>
+  </head>
+  <body>
+    <main class="container min-vh-90">
+      <h1 class="center">
+        Shorten your URL <i class="fa-solid fa-link" style="color: gold"></i>
+      </h1>
+      <form method="post" id="shortener-ulr-form">
+        <label for="long-url"> Long URL: </label>
+        <fieldset role="group">
+          <input
+            type="url"
+            name="long-url"
+            id="long-url"
+            placeholder="Enter your URL"
+            aria-label="Long-Url" />
+          <input type="submit" value="Short" />
+        </fieldset>
+        <div id="loader"></div>
+        <div class="result">
+          <label for="short-url"> Short URL: </label>
+          <fieldset role="group">
+            <input
+              type="url"
+              name="short-url"
+              id="short-url"
+              value="Read-only"
+              aria-label="Read-only input"
+              readonly />
+            <button type="button" value="Copy">
+              Copy
+              <i class="fa-solid fa-clone"></i>
+            </button>
+          </fieldset>
+        </div>
+      </form>
+    </main>
+    <footer class="center">&copyMade❤️By Amed-dev</footer>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

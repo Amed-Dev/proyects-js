@@ -1,0 +1,31 @@
+.center {
+  text-align: center;
+}
+
+.min-vh-90 {
+  min-height: 90vh;
+}
+
+[role="group"] button {
+  margin: 0;
+  padding: 0 24px;
+  width: fit-content;
+  display: flex;
+  gap: 0.5rem;
+  flex: 1 1 auto;
+  align-items: center;
+}
+.d-block {
+  display: block !important;
+}
+.d-none {
+  display: none !important;
+}
+
+.result {
+  transition: all 0.8s ease-in-out;
+  display: none;
+}
+.result.show{
+  display: block !important;
+}
