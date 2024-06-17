@@ -12,3 +12,4 @@ Aquí encontramos ejercicios de lógica de programación con js .
 | 1-3: Práctica 7 | [Práctica-7 (1-3)](./Amed_practice_7/)           | [Demo_Práctica-7 (1-3)](https://amed-dev.github.io/proyects-js/Amed_practice_7/)           |
 | 3-4: Práctica 8 | [Práctica-8 (3-4)](./Amed_practice_8/question_3) | [Demo_Práctica-8 (3-4)](https://amed-dev.github.io/proyects-js/Amed_practice_8/question_3) |
 | Práctica 10     | [Práctica-10](./Amed_practice_10/)               | [Demo_Práctica-10](https://amed-dev.github.io/proyects-js/Amed_practice_10/)          |
+| Práctica 11     | [Práctica-11](./Amed_practice_11/)               | [Demo_Práctica-11](https://amed-dev.github.io/proyects-js/Amed_practice_11/)          |
