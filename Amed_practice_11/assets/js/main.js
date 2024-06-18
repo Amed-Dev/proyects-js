@@ -1,6 +1,8 @@
 // dom
 const $ = (selector, context = document) => context.querySelector(selector);
 
+const tooltip = $(".tooltiptext");
+let iconButton = $(".tooltip i");
 $("#shortener-ulr-form").addEventListener("submit", async (e) => {
   e.preventDefault();
   const longURL = $("#long-url").value;
@@ -23,7 +25,6 @@ $("#shortener-ulr-form").addEventListener("submit", async (e) => {
     const response = await fetch(url, options);
     const result = await response.json();
     $("#loader").innerHTML = "";
-    console.log(result.url)
     showShortURL(result);
   } catch (error) {
     console.error(error);
@@ -40,3 +41,25 @@ function showShortURL(data) {
   }
   $(".result").classList.add("show");
 }
+
+$("#btn-copy").addEventListener("click", () => {
+  const shortURL = $("#short-url").value;
+
+  if (navigator.clipboard) {
+    navigator.clipboard
+      .writeText(shortURL)
+      .then(() => {
+        tooltip.textContent = "Copiado!";
+        iconButton.classList.remove("fa-copy");
+        iconButton.classList.add("fa-check");
+        setTimeout(() => {
+          iconButton.classList.remove("fa-check");
+          iconButton.classList.add("fa-copy");
+        }, 2500);
+      })
+      .catch((error) => {
+        tooltip.textContent = "Error al copiar";
+        console.error("Error al copiar texto:", error);
+      });
+  }
+});
