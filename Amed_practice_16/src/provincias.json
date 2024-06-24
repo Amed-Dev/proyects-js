@@ -1,0 +1,1002 @@
+[
+    {
+   "codigo": 2,
+   "provincia":"Acomayo",
+   "distrito":"",
+   "latitud": -13.94532727,
+   "longitud": -71.67941679,
+   "zoom": 12
+    },
+    {
+   "codigo": 80201,
+   "provincia":"Acomayo",
+   "distrito":"Acomayo",
+   "latitud": -13.92139556,
+   "longitud": -71.68379342,
+   "zoom": 14
+    },
+    {
+   "codigo": 80202,
+   "provincia":"Acomayo",
+   "distrito":"Acopia",
+   "latitud": -14.05769047,
+   "longitud": -71.49280177,
+   "zoom": 14
+    },
+    {
+   "codigo": 80203,
+   "provincia":"Acomayo",
+   "distrito":"Acos",
+   "latitud": -13.95037341,
+   "longitud": -71.73826662,
+   "zoom": 14
+    },
+    {
+   "codigo": 80204,
+   "provincia":"Acomayo",
+   "distrito":"Mosoc Llacta",
+   "latitud": -14.12008485,
+   "longitud": -71.47324198,
+   "zoom": 14
+    },
+    {
+   "codigo": 80205,
+   "provincia":"Acomayo",
+   "distrito":"Pomacanchi",
+   "latitud": -14.03374038,
+   "longitud": -71.57193661,
+   "zoom": 14
+    },
+    {
+   "codigo": 80206,
+   "provincia":"Acomayo",
+   "distrito":"Rondocan",
+   "latitud": -13.77872293,
+   "longitud": -71.78127397,
+   "zoom": 14
+    },
+    {
+   "codigo": 80207,
+   "provincia":"Acomayo",
+   "distrito":"Sangarará",
+   "latitud": -13.94833086,
+   "longitud": -71.60338833,
+   "zoom": 14
+    },
+    {
+   "codigo": 3,
+   "provincia":"Anta",
+   "distrito":"",
+   "latitud": -13.4646584,
+   "longitud": -72.34357657,
+   "zoom": 12
+    },
+    {
+   "codigo": 80302,
+   "provincia":"Anta",
+   "distrito":"Ancahuasi",
+   "latitud": -13.45553699,
+   "longitud": -72.30035623,
+   "zoom": 14
+    },
+    {
+   "codigo": 80301,
+   "provincia":"Anta",
+   "distrito":"Anta",
+   "latitud": -13.46838629,
+   "longitud": -72.14358318,
+   "zoom": 14
+    },
+    {
+   "codigo": 80303,
+   "provincia":"Anta",
+   "distrito":"Cachimayo",
+   "latitud": -13.48045188,
+   "longitud": -72.0645355,
+   "zoom": 14
+    },
+    {
+   "codigo": 80304,
+   "provincia":"Anta",
+   "distrito":"Chinchaypujio",
+   "latitud": -13.6288456,
+   "longitud": -72.23220116,
+   "zoom": 14
+    },
+    {
+   "codigo": 80305,
+   "provincia":"Anta",
+   "distrito":"Huarocondo",
+   "latitud": -13.41399106,
+   "longitud": -72.20663701,
+   "zoom": 14
+    },
+    {
+   "codigo": 80306,
+   "provincia":"Anta",
+   "distrito":"Limatambo",
+   "latitud": -13.48150357,
+   "longitud": -72.44517881,
+   "zoom": 14
+    },
+    {
+   "codigo": 80307,
+   "provincia":"Anta",
+   "distrito":"Mollepata",
+   "latitud": -13.50851875,
+   "longitud": -72.52917953,
+   "zoom": 14
+    },
+    {
+   "codigo": 80308,
+   "provincia":"Anta",
+   "distrito":"Pucyura",
+   "latitud": -13.4793824,
+   "longitud": -72.11148295,
+   "zoom": 14
+    },
+    {
+   "codigo": 80309,
+   "provincia":"Anta",
+   "distrito":"Zurite",
+   "latitud": -13.45541251,
+   "longitud": -72.25546896,
+   "zoom": 14
+    },
+    {
+   "codigo": 4,
+   "provincia":"Calca",
+   "distrito":"",
+   "latitud": -13.32639419,
+   "longitud": -71.95166024,
+   "zoom": 12
+    },
+    {
+   "codigo": 80401,
+   "provincia":"Calca",
+   "distrito":"Calca",
+   "latitud": -13.32639419,
+   "longitud": -71.95166024,
+   "zoom": 14
+    },
+    {
+   "codigo": 80402,
+   "provincia":"Calca",
+   "distrito":"Coya",
+   "latitud": -13.38619533,
+   "longitud": -71.90233869,
+   "zoom": 14
+    },
+    {
+   "codigo": 80403,
+   "provincia":"Calca",
+   "distrito":"Lamay",
+   "latitud": -13.36187508,
+   "longitud": -71.91837345,
+   "zoom": 14
+    },
+    {
+   "codigo": 80404,
+   "provincia":"Calca",
+   "distrito":"Lares",
+   "latitud": -13.10258928,
+   "longitud": -72.03212327,
+   "zoom": 14
+    },
+    {
+   "codigo": 80405,
+   "provincia":"Calca",
+   "distrito":"Pisac",
+   "latitud": -13.42156187,
+   "longitud": -71.84983098,
+   "zoom": 14
+    },
+    {
+   "codigo": 80406,
+   "provincia":"Calca",
+   "distrito":"San Salvador",
+   "latitud": -13.49107684,
+   "longitud": -71.77748375,
+   "zoom": 14
+    },
+    {
+   "codigo": 80407,
+   "provincia":"Calca",
+   "distrito":"Taray",
+   "latitud": -13.42585559,
+   "longitud": -71.8670224,
+   "zoom": 14
+    },
+    {
+   "codigo": 80408,
+   "provincia":"Calca",
+   "distrito":"Yanatile",
+   "latitud": -12.68540657,
+   "longitud": -72.27119254,
+   "zoom": 14
+    },
+    {
+   "codigo": 5,
+   "provincia":"Canas",
+   "distrito":"",
+   "latitud": -14.43656091,
+   "longitud": -71.33641834,
+   "zoom": 12
+    },
+    {
+   "codigo": 80502,
+   "provincia":"Canas",
+   "distrito":"Checca",
+   "latitud": -14.47813874,
+   "longitud": -71.4180812,
+   "zoom": 14
+    },
+    {
+   "codigo": 80503,
+   "provincia":"Canas",
+   "distrito":"Kunturkanki",
+   "latitud": -14.53544673,
+   "longitud": -71.30521767,
+   "zoom": 14
+    },
+    {
+   "codigo": 80504,
+   "provincia":"Canas",
+   "distrito":"Langui",
+   "latitud": -14.42952704,
+   "longitud": -71.27236227,
+   "zoom": 14
+    },
+    {
+   "codigo": 80505,
+   "provincia":"Canas",
+   "distrito":"Layo",
+   "latitud": -14.49551588,
+   "longitud": -71.15094283,
+   "zoom": 14
+    },
+    {
+   "codigo": 80506,
+   "provincia":"Canas",
+   "distrito":"Pampamarca",
+   "latitud": -14.1468612,
+   "longitud": -71.46624668,
+   "zoom": 14
+    },
+    {
+   "codigo": 80507,
+   "provincia":"Canas",
+   "distrito":"Quehue",
+   "latitud": -14.38227067,
+   "longitud": -71.45796929,
+   "zoom": 14
+    },
+    {
+   "codigo": 80508,
+   "provincia":"Canas",
+   "distrito":"Tupac Amaru",
+   "latitud": -14.15347237,
+   "longitud": -71.57308554,
+   "zoom": 14
+    },
+    {
+   "codigo": 80501,
+   "provincia":"Canas",
+   "distrito":"Yanaoca",
+   "latitud": -14.21883094,
+   "longitud": -71.42606696,
+   "zoom": 14
+    },
+    {
+   "codigo": 6,
+   "provincia":"Canchis",
+   "distrito":"",
+   "latitud": -14.12281517,
+   "longitud": -71.12016749,
+   "zoom": 11
+    },
+    {
+   "codigo": 80602,
+   "provincia":"Canchis",
+   "distrito":"Checacupe",
+   "latitud": -14.02865182,
+   "longitud": -71.45654312,
+   "zoom": 13
+    },
+    {
+   "codigo": 80603,
+   "provincia":"Canchis",
+   "distrito":"Combapata",
+   "latitud": -14.10461755,
+   "longitud": -71.42082696,
+   "zoom": 13
+    },
+    {
+   "codigo": 80604,
+   "provincia":"Canchis",
+   "distrito":"Marangani",
+   "latitud": -14.35229995,
+   "longitud": -71.1747817,
+   "zoom": 13
+    },
+    {
+   "codigo": 80605,
+   "provincia":"Canchis",
+   "distrito":"Pitumarca",
+   "latitud": -13.98206298,
+   "longitud": -71.41254586,
+   "zoom": 13
+    },
+    {
+   "codigo": 80606,
+   "provincia":"Canchis",
+   "distrito":"San Pablo",
+   "latitud": -14.20146194,
+   "longitud": -71.3124999,
+   "zoom": 13
+    },
+    {
+   "codigo": 80607,
+   "provincia":"Canchis",
+   "distrito":"San Pedro",
+   "latitud": -14.18996541,
+   "longitud": -71.3480158,
+   "zoom": 13
+    },
+    {
+   "codigo": 80601,
+   "provincia":"Canchis",
+   "distrito":"Sicuani",
+   "latitud": -14.26967943,
+   "longitud": -71.22849353,
+   "zoom": 13
+    },
+    {
+   "codigo": 80608,
+   "provincia":"Canchis",
+   "distrito":"Tinta",
+   "latitud": -14.13925394,
+   "longitud": -71.40984167,
+   "zoom": 13
+    },
+    {
+   "codigo": 7,
+   "provincia":"Chumbivilcas",
+   "distrito":"",
+   "latitud": -14.50077468,
+   "longitud": -72.0573994,
+   "zoom": 12
+    },
+    {
+   "codigo": 80702,
+   "provincia":"Chumbivilcas",
+   "distrito":"Capacmarca",
+   "latitud": -14.0083742,
+   "longitud": -72.00439058,
+   "zoom": 13
+    },
+    {
+   "codigo": 80703,
+   "provincia":"Chumbivilcas",
+   "distrito":"Chamaca",
+   "latitud": -14.30822881,
+   "longitud": -71.87392432,
+   "zoom": 13
+    },
+    {
+   "codigo": 80704,
+   "provincia":"Chumbivilcas",
+   "distrito":"Colquemarca",
+   "latitud": -14.284239,
+   "longitud": -72.03224,
+   "zoom": 13
+    },
+    {
+   "codigo": 80705,
+   "provincia":"Chumbivilcas",
+   "distrito":"Livitaca",
+   "latitud": -14.31791798,
+   "longitud": -71.71011555,
+   "zoom": 13
+    },
+    {
+   "codigo": 80706,
+   "provincia":"Chumbivilcas",
+   "distrito":"Llusco",
+   "latitud": -14.33952379,
+   "longitud": -72.11490124,
+   "zoom": 13
+    },
+    {
+   "codigo": 80707,
+   "provincia":"Chumbivilcas",
+   "distrito":"Quiñota",
+   "latitud": -14.31106764,
+   "longitud": -72.13343734,
+   "zoom": 13
+    },
+    {
+   "codigo": 80701,
+   "provincia":"Chumbivilcas",
+   "distrito":"Santo Tomás",
+   "latitud": -14.45339634,
+   "longitud": -72.0877882,
+   "zoom": 13
+    },
+    {
+   "codigo": 80708,
+   "provincia":"Chumbivilcas",
+   "distrito":"Velille",
+   "latitud": -14.50999786,
+   "longitud": -71.88351439,
+   "zoom": 13
+    },
+    {
+   "codigo": 1,
+   "provincia":"Cusco",
+   "distrito":"",
+   "latitud": -13.52938229,
+   "longitud": -71.95074662,
+   "zoom": 12
+    },
+    {
+   "codigo": 80102,
+   "provincia":"Cusco",
+   "distrito":"Ccorca",
+   "latitud": -13.58404841,
+   "longitud": -72.06067135,
+   "zoom": 14
+    },
+    {
+   "codigo": 80101,
+   "provincia":"Cusco",
+   "distrito":"Cusco",
+   "latitud": -13.53208023,
+   "longitud": -71.96431894,
+   "zoom": 15
+    },
+    {
+   "codigo": 80103,
+   "provincia":"Cusco",
+   "distrito":"Poroy",
+   "latitud": -13.49511384,
+   "longitud": -72.04498406,
+   "zoom": 14
+    },
+    {
+   "codigo": 80104,
+   "provincia":"Cusco",
+   "distrito":"San Jerónimo",
+   "latitud": -13.5489281,
+   "longitud": -71.89425368,
+   "zoom": 15
+    },
+    {
+   "codigo": 80105,
+   "provincia":"Cusco",
+   "distrito":"San Sebastián",
+   "latitud": -13.53024005,
+   "longitud": -71.93718432,
+   "zoom": 15
+    },
+    {
+   "codigo": 80106,
+   "provincia":"Cusco",
+   "distrito":"Santiago",
+   "latitud": -13.52566103,
+   "longitud": -71.98226279,
+   "zoom": 15
+    },
+    {
+   "codigo": 80107,
+   "provincia":"Cusco",
+   "distrito":"Saylla",
+   "latitud": -13.5763222,
+   "longitud": -71.81921276,
+   "zoom": 15
+    },
+    {
+   "codigo": 80108,
+   "provincia":"Cusco",
+   "distrito":"Wanchaq",
+   "latitud": -13.52285525,
+   "longitud": -71.96637152,
+   "zoom": 15
+    },
+    {
+   "codigo": 8,
+   "provincia":"Espinar",
+   "distrito":"",
+   "latitud": -14.79291618,
+   "longitud": -71.42807924,
+   "zoom": 12
+    },
+    {
+   "codigo": 80808,
+   "provincia":"Espinar",
+   "distrito":"Alto Pichigua",
+   "latitud": -14.67936144,
+   "longitud": -71.39862588,
+   "zoom": 13
+    },
+    {
+   "codigo": 80802,
+   "provincia":"Espinar",
+   "distrito":"Condoroma",
+   "latitud": -15.30066221,
+   "longitud": -71.12636519,
+   "zoom": 13
+    },
+    {
+   "codigo": 80803,
+   "provincia":"Espinar",
+   "distrito":"Coporaque",
+   "latitud": -14.79447072,
+   "longitud": -71.54286804,
+   "zoom": 13
+    },
+    {
+   "codigo": 80801,
+   "provincia":"Espinar",
+   "distrito":"Espinar",
+   "latitud": -14.79291618,
+   "longitud": -71.42807924,
+   "zoom": 13
+    },
+    {
+   "codigo": 80804,
+   "provincia":"Espinar",
+   "distrito":"Ocoruro",
+   "latitud": -15.06370603,
+   "longitud": -71.12271399,
+   "zoom": 13
+    },
+    {
+   "codigo": 80805,
+   "provincia":"Espinar",
+   "distrito":"Pallpata",
+   "latitud": -14.89896785,
+   "longitud": -71.09620026,
+   "zoom": 13
+    },
+    {
+   "codigo": 80806,
+   "provincia":"Espinar",
+   "distrito":"Pichigua",
+   "latitud": -14.77605069,
+   "longitud": -71.24741275,
+   "zoom": 13
+    },
+    {
+   "codigo": 80807,
+   "provincia":"Espinar",
+   "distrito":"Suyckutambo",
+   "latitud": -15.06737455,
+   "longitud": -71.74660854,
+   "zoom": 13
+    },
+    {
+   "codigo": 9,
+   "provincia":"La Convención",
+   "distrito":"",
+   "latitud": -12.6845323,
+   "longitud": -72.83505248,
+   "zoom": 11
+    },
+    {
+   "codigo": 80901,
+   "provincia":"La Convención",
+   "distrito":"Echarati",
+   "latitud": -12.77627998,
+   "longitud": -72.59428145,
+   "zoom": 14
+    },
+    {
+   "codigo": 80902,
+   "provincia":"La Convención",
+   "distrito":"Huayopata",
+   "latitud": -13.00478614,
+   "longitud": -72.54348747,
+   "zoom": 14
+    },
+    {
+   "codigo": 80903,
+   "provincia":"La Convención",
+   "distrito":"Inkawasi",
+   "latitud": -13.2926002,
+   "longitud": -73.22100705,
+   "zoom": 14
+    },
+    {
+   "codigo": 80904,
+   "provincia":"La Convención",
+   "distrito":"Kimbiri",
+   "latitud": -12.61770783,
+   "longitud": -73.78301352,
+   "zoom": 14
+    },
+    {
+   "codigo": 80905,
+   "provincia":"La Convención",
+   "distrito":"Maranura",
+   "latitud": -12.96324709,
+   "longitud": -72.66292208,
+   "zoom": 14
+    },
+    {
+   "codigo": 80906,
+   "provincia":"La Convención",
+   "distrito":"Megantoni",
+   "latitud": -11.72322949,
+   "longitud": -72.9415293,
+   "zoom": 14
+    },
+    {
+   "codigo": 80907,
+   "provincia":"La Convención",
+   "distrito":"Ocobamba",
+   "latitud": -12.87017787,
+   "longitud": -72.44861215,
+   "zoom": 14
+    },
+    {
+   "codigo": 80908,
+   "provincia":"La Convención",
+   "distrito":"Pichari",
+   "latitud": -12.51736235,
+   "longitud": -73.82586586,
+   "zoom": 14
+    },
+    {
+   "codigo": 80909,
+   "provincia":"La Convención",
+   "distrito":"Quellouno",
+   "latitud": -12.63653975,
+   "longitud": -72.55812695,
+   "zoom": 14
+    },
+    {
+   "codigo": 80910,
+   "provincia":"La Convención",
+   "distrito":"Santa Ana",
+   "latitud": -12.88395905,
+   "longitud": -72.72441747,
+   "zoom": 14
+    },
+    {
+   "codigo": 80911,
+   "provincia":"La Convención",
+   "distrito":"Santa Teresa",
+   "latitud": -13.13099941,
+   "longitud": -72.59397365,
+   "zoom": 14
+    },
+    {
+   "codigo": 80912,
+   "provincia":"La Convención",
+   "distrito":"Vilcabamba",
+   "latitud": -13.12164915,
+   "longitud": -72.98553498,
+   "zoom": 14
+    },
+    {
+   "codigo": 80913,
+   "provincia":"La Convención",
+   "distrito":"Villa Kintiarina",
+   "latitud": -12.91617671,
+   "longitud": -73.5262773,
+   "zoom": 14
+    },
+    {
+   "codigo": 80914,
+   "provincia":"La Convención",
+   "distrito":"Villa Virgen",
+   "latitud": -13.00235477,
+   "longitud": -73.51272242,
+   "zoom": 14
+    },
+    {
+   "codigo": 10,
+   "provincia":"Paruro",
+   "distrito":"",
+   "latitud": -13.769570220783713,
+   "longitud": -71.87980495546543,
+   "zoom": 12
+    },
+    {
+   "codigo": 81002,
+   "provincia":"Paruro",
+   "distrito":"Accha",
+   "latitud": -13.97450318,
+   "longitud": -71.83506951,
+   "zoom": 14
+    },
+    {
+   "codigo": 81003,
+   "provincia":"Paruro",
+   "distrito":"Ccapi",
+   "latitud": -13.85559805,
+   "longitud": -72.08149902,
+   "zoom": 14
+    },
+    {
+   "codigo": 81004,
+   "provincia":"Paruro",
+   "distrito":"Colcha",
+   "latitud": -13.85781598,
+   "longitud": -71.79649081,
+   "zoom": 14
+    },
+    {
+   "codigo": 81005,
+   "provincia":"Paruro",
+   "distrito":"Huanoquite",
+   "latitud": -13.68056827,
+   "longitud": -72.01651969,
+   "zoom": 14
+    },
+    {
+   "codigo": 81006,
+   "provincia":"Paruro",
+   "distrito":"Omacha",
+   "latitud": -14.07419587,
+   "longitud": -71.75097885,
+   "zoom": 14
+    },
+    {
+   "codigo": 81007,
+   "provincia":"Paruro",
+   "distrito":"Paccaritambo",
+   "latitud": -13.74964232,
+   "longitud": -71.95880786,
+   "zoom": 14
+    },
+    {
+   "codigo": 81001,
+   "provincia":"Paruro",
+   "distrito":"Paruro",
+   "latitud": -13.76130968,
+   "longitud": -71.84778411,
+   "zoom": 14
+    },
+    {
+   "codigo": 81008,
+   "provincia":"Paruro",
+   "distrito":"Pillpinto",
+   "latitud": -13.96119393,
+   "longitud": -71.77163864,
+   "zoom": 14
+    },
+    {
+   "codigo": 81009,
+   "provincia":"Paruro",
+   "distrito":"Yaurisque",
+   "latitud": -13.66945106,
+   "longitud": -71.92167843,
+   "zoom": 14
+    },
+    {
+   "codigo": 11,
+   "provincia":"Paucartambo",
+   "distrito":"",
+   "latitud": -13.3284026,
+   "longitud": -71.61847309,
+   "zoom": 12
+    },
+    {
+   "codigo": 81102,
+   "provincia":"Paucartambo",
+   "distrito":"Caicay",
+   "latitud": -13.59743245,
+   "longitud": -71.69401351,
+   "zoom": 13
+    },
+    {
+   "codigo": 81103,
+   "provincia":"Paucartambo",
+   "distrito":"Challabamba",
+   "latitud": -13.21068323,
+   "longitud": -71.6451036,
+   "zoom": 13
+    },
+    {
+   "codigo": 81104,
+   "provincia":"Paucartambo",
+   "distrito":"Colquepata",
+   "latitud": -13.36149596,
+   "longitud": -71.6808434,
+   "zoom": 13
+    },
+    {
+   "codigo": 81105,
+   "provincia":"Paucartambo",
+   "distrito":"Huancarani",
+   "latitud": -13.50629597,
+   "longitud": -71.64578113,
+   "zoom": 13
+    },
+    {
+   "codigo": 81106,
+   "provincia":"Paucartambo",
+   "distrito":"Kosñipata",
+   "latitud": -12.91235602,
+   "longitud": -71.40201364,
+   "zoom": 13
+    },
+    {
+   "codigo": 81101,
+   "provincia":"Paucartambo",
+   "distrito":"Paucartambo",
+   "latitud": -13.30574347,
+   "longitud": -71.61805378,
+   "zoom": 13
+    },
+    {
+   "codigo": 12,
+   "provincia":"Quispicanchi",
+   "distrito":"",
+   "latitud": -13.62253037,
+   "longitud": -71.47689808,
+   "zoom": 11
+    },
+    {
+   "codigo": 81202,
+   "provincia":"Quispicanchi",
+   "distrito":"Andahuaylillas",
+   "latitud": -13.67384416,
+   "longitud": -71.67707066,
+   "zoom": 13
+    },
+    {
+   "codigo": 81203,
+   "provincia":"Quispicanchi",
+   "distrito":"Camanti",
+   "latitud": -13.28210944,
+   "longitud": -70.77947277,
+   "zoom": 13
+    },
+    {
+   "codigo": 81204,
+   "provincia":"Quispicanchi",
+   "distrito":"Ccarhuayo",
+   "latitud": -13.54435388,
+   "longitud": -71.35977112,
+   "zoom": 13
+    },
+    {
+   "codigo": 81205,
+   "provincia":"Quispicanchi",
+   "distrito":"Ccatcca",
+   "latitud": -13.60797004,
+   "longitud": -71.56926223,
+   "zoom": 13
+    },
+    {
+   "codigo": 81206,
+   "provincia":"Quispicanchi",
+   "distrito":"Cusipata",
+   "latitud": -13.90437238,
+   "longitud": -71.49779755,
+   "zoom": 12
+    },
+    {
+   "codigo": 81207,
+   "provincia":"Quispicanchi",
+   "distrito":"Huaro",
+   "latitud": -13.69067276,
+   "longitud": -71.64230721,
+   "zoom": 13
+    },
+    {
+   "codigo": 81208,
+   "provincia":"Quispicanchi",
+   "distrito":"Lucre",
+   "latitud": -13.63387369,
+   "longitud": -71.73416221,
+   "zoom": 13
+    },
+    {
+   "codigo": 81209,
+   "provincia":"Quispicanchi",
+   "distrito":"Marcapata",
+   "latitud": -13.59327611,
+   "longitud": -70.97646929,
+   "zoom": 13
+    },
+    {
+   "codigo": 81210,
+   "provincia":"Quispicanchi",
+   "distrito":"Ocongate",
+   "latitud": -13.63384854,
+   "longitud": -71.38805827,
+   "zoom": 13
+    },
+    {
+   "codigo": 81211,
+   "provincia":"Quispicanchi",
+   "distrito":"Oropesa",
+   "latitud": -13.59917973,
+   "longitud": -71.76212019,
+   "zoom": 13
+    },
+    {
+   "codigo": 81212,
+   "provincia":"Quispicanchi",
+   "distrito":"Quiquijana",
+   "latitud": -13.82453775,
+   "longitud": -71.54480973,
+   "zoom": 13
+    },
+    {
+   "codigo": 81201,
+   "provincia":"Quispicanchi",
+   "distrito":"Urcos",
+   "latitud": -13.68251626,
+   "longitud": -71.62180427,
+   "zoom": 13
+    },
+    {
+   "codigo": 13,
+   "provincia":"Urubamba",
+   "distrito":"",
+   "latitud": -13.29826779,
+   "longitud": -72.15168922,
+   "zoom": 12
+    },
+    {
+   "codigo": 81302,
+   "provincia":"Urubamba",
+   "distrito":"Chinchero",
+   "latitud": -13.40730292,
+   "longitud": -72.04682942,
+   "zoom": 14
+    },
+    {
+   "codigo": 81303,
+   "provincia":"Urubamba",
+   "distrito":"Huayllabamba",
+   "latitud": -13.33833994,
+   "longitud": -72.06548832,
+   "zoom": 15
+    },
+    {
+   "codigo": 81304,
+   "provincia":"Urubamba",
+   "distrito":"Machupicchu",
+   "latitud": -13.15741017,
+   "longitud": -72.53995914,
+   "zoom": 13
+    },
+    {
+   "codigo": 81305,
+   "provincia":"Urubamba",
+   "distrito":"Maras",
+   "latitud": -13.33457667,
+   "longitud": -72.15861838,
+   "zoom": 14
+    },
+    {
+   "codigo": 81306,
+   "provincia":"Urubamba",
+   "distrito":"Ollantaytambo",
+   "latitud": -13.25912964,
+   "longitud": -72.26640338,
+   "zoom": 14
+    },
+    {
+   "codigo": 81301,
+   "provincia":"Urubamba",
+   "distrito":"Urubamba",
+   "latitud": -13.30529272,
+   "longitud": -72.12161789,
+   "zoom": 14
+    },
+    {
+   "codigo": 81307,
+   "provincia":"Urubamba",
+   "distrito":"Yucay",
+   "latitud": -13.32065109,
+   "longitud": -72.08361636,
+   "zoom": 15
+    }
+   ]
