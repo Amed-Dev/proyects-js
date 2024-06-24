@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      window.onload = function () {
+        var dataPoints = [];
+
+        var chart = new CanvasJS.Chart("chartContainer", {
+          animationEnabled: true,
+          theme: "dark2",
+          title: {
+            text: "Seguimiento de Peso",
+            fontColor: "#34e8eb",
+          },
+          axisY: {
+            title: "Peso",
+            titleFontSize: 24,
+            includeZero: true,
+          },
+          axisX: {
+            title: "Nro de evaluación",
+            titleFontSize: 24,
+            includeZero: true,
+          },
+          data: [
+            {
+              type: "spline",
+              yValueFormatString: "#,### kg",
+              dataPoints: dataPoints,
+            },
+          ],
+        });
+
+        function addPatient(data, indexPatient = 0) {
+          dataPoints.length = 0;
+          var evaluaciones = data[indexPatient].evaluaciones;
+          console.log(evaluaciones);
+          for (var i = 0; i < evaluaciones.length; i++) {
+            dataPoints.push({
+              x: evaluaciones[i].nroEvaluacion,
+              y: evaluaciones[i].peso,
+              label: `Consulta ${evaluaciones[i].nroEvaluacion}`,
+            });
+          }
+          chart.render();
+        }
+
+        function completePatients(data){
+          var patientSelect = document.getElementById("selectorPaciente");
+          data.forEach((patient, i)=>{
+            let option = document.createElement('option');
+            option.value = i;
+            option.text = patient.nombre;
+            patientSelect.add(option);
+          })
+          patientSelect.addEventListener("change", (e)=>{
+            let patientSelected = e.target.value;
+            console.log(patientSelected);
+            addPatient(data, patientSelected);
+          })
+          console.log(data)
+          addPatient(data, 0)
+        }
+        $.getJSON("./data/pacientes.json", (data)=>{
+          completePatients(data);
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <style>
+      [data-theme] {
+        color-scheme: dark;
+      }
+    </style>
+    <select name="patientSelect" id="selectorPaciente"></select>
+    <div id="chartContainer" style="height: 370px; width: 100%"></div>
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+  </body>
+</html>

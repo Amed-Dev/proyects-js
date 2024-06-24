@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live.code</title>
+  </head>
+  <body>
+    <div id="app">
+      <aside></aside>
+      <div id="editor" class="grid">
+        <codi-editor id="html" language="html"></codi-editor>
+        <codi-editor id="javascript" language="javascript"></codi-editor>
+        <codi-editor id="css" language="css"></codi-editor>
+  
+        <div id="editor-preview" class="iframe-container">
+          <iframe title="live.code Preview"></iframe>
+        </div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
+
+

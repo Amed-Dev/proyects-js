@@ -1,0 +1,108 @@
+[
+    {
+        "codigo": "001",
+        "nombre": "Juan Perez",
+        "fechaNacimiento": "1990-05-20",
+        "genero": "M",
+        "evaluaciones": [
+            {
+                "nroEvaluacion": 1,
+                "estatura": 1.75,
+                "peso": 70,
+                "cuello": 40,
+                "pecho": 90,
+                "cadera": 100,
+                "cintura": 85
+            },
+            {
+                "nroEvaluacion": 2,
+                "estatura": 1.75,
+                "peso": 68,
+                "cuello": 39,
+                "pecho": 89,
+                "cadera": 99,
+                "cintura": 84
+            },
+            {
+                "nroEvaluacion": 3,
+                "estatura": 1.75,
+                "peso": 65,
+                "cuello": 39,
+                "pecho": 89,
+                "cadera": 99,
+                "cintura": 84
+            },
+            {
+                "nroEvaluacion": 4,
+                "estatura": 1.75,
+                "peso": 60,
+                "cuello": 39,
+                "pecho": 89,
+                "cadera": 99,
+                "cintura": 84
+            },
+            {
+                "nroEvaluacion": 5,
+                "estatura": 1.75,
+                "peso": 64,
+                "cuello": 39,
+                "pecho": 89,
+                "cadera": 99,
+                "cintura": 84
+            },
+            {
+                "nroEvaluacion": 6,
+                "estatura": 1.75,
+                "peso": 63.2,
+                "cuello": 39,
+                "pecho": 89,
+                "cadera": 99,
+                "cintura": 84
+            }
+        ]
+    },
+    {
+        "codigo": "002",
+        "nombre": "Ana Garcia",
+        "fechaNacimiento": "1985-03-15",
+        "genero": "F",
+        "evaluaciones": [
+            {
+                "nroEvaluacion": 1,
+                "estatura": 1.60,
+                "peso": 60,
+                "cuello": 38,
+                "pecho": 85,
+                "cadera": 95,
+                "cintura": 80
+            },
+            {
+                "nroEvaluacion": 2,
+                "estatura": 1.60,
+                "peso": 66,
+                "cuello": 38,
+                "pecho": 85,
+                "cadera": 95,
+                "cintura": 80
+            },
+            {
+                "nroEvaluacion": 3,
+                "estatura": 1.60,
+                "peso": 64,
+                "cuello": 38,
+                "pecho": 85,
+                "cadera": 95,
+                "cintura": 80
+            },
+            {
+                "nroEvaluacion": 4,
+                "estatura": 1.60,
+                "peso": 62,
+                "cuello": 38,
+                "pecho": 85,
+                "cadera": 95,
+                "cintura": 80
+            }
+        ]
+    }
+]
