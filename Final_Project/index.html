@@ -30,7 +30,7 @@
       <aside class="text-center m-3 pt-4">
         <h3>Events Finder</h3>
         <img src="./assets/favicon.png" alt="Events finder" height="96px" class="mb-3">
-        <form action="" method="post">
+        <form method="post" id="searchForm">
           <div class="input-group mb-3">
             <input
               type="text"
@@ -42,7 +42,10 @@
             <button type="button" class="btn btn-info" id="searchBtn"><i class="bi bi-search"></i></button>
           </div>
         </form>
-        <ul></ul>
+        <section id="listEvents"></section>
+        <footer class="mt-4">
+          Made ❤️ by Amed-Dev
+        </footer>
       </aside>
       <div id="map"></div>
     </main>

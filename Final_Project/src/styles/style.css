@@ -1,11 +1,19 @@
-#map{
+#map {
   height: 100vh;
 }
-.grid{
-  display: grid; 
-  grid-template-columns: 1.5fr 3.5fr; 
-  grid-template-rows: 1fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    ". ."; 
+.grid {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1.5fr 3.5fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: ". .";
+}
+aside {
+  overflow-y: hidden;
+}
+#listEvents {
+  height: 430px;
+  max-height: 60%;
+  overflow-y: auto;
 }

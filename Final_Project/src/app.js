@@ -28,7 +28,7 @@ class App {
             position.coords.latitude,
             position.coords.longitude,
           ];
-          this.map.setView(userCoords, 12);
+          this.map.addCurrentLocation(userCoords, 9);
         },
         (error) => {
           console.error("Error al obtener la ubicación: ", error);
@@ -52,13 +52,55 @@ class App {
 
   renderEvents(events) {
     this.map.clearMarkers();
+
+    if (Array.isArray(events)) {
+      events.forEach((event) => {
+        this.map.addEventMarker(event);
+      });
+    } else{
+      this.map.addEventMarker([events])
+    }
+  }
+
+  listEvents(events) {
+    const listContainer = $("#listEvents");
+    listContainer.innerHTML = "";
+
+    let list = document.createElement("ul");
+    list.className = "list-group";
+    let label = document.createElement("li");
+    label.className = "list-group-item disabled";
+    label.setAttribute("aria-disabled", "true");
+    label.textContent = "Events Found";
+    list.appendChild(label);
+
     events.forEach((event) => {
-      this.map.addEventMarker(event);
+      let eventItem = document.createElement("li");
+      eventItem.className = "list-group-item";
+      eventItem.style.cursor = "pointer";
+      eventItem.innerHTML = `<span>${event.name}</span> - <b>${event.category}</b>`;
+
+      eventItem.addEventListener("click", () => {
+        this.map.clearMarkers();
+        const eventCoords = [event.latitude, event.longitude];
+        this.map.addEventMarker(event);
+        this.map.setView(eventCoords, 14);
+      });
+      list.appendChild(eventItem);
     });
+
+    $("#listEvents").appendChild(list);
   }
 
   bindEvents() {
     $("#searchBtn").addEventListener("click", () => {
+      this.searchEvents();
+    });
+    $("#searchInput").addEventListener("input", () => {
+      this.searchEvents();
+    });
+    $("#searchForm").addEventListener("submit", () => {
+      e.preventDefault();
       this.searchEvents();
     });
   }
@@ -71,8 +113,18 @@ class App {
         event.category.toLowerCase().includes(searchText)
       );
     });
-    console.log(filteredEvents);
+
+    if (filteredEvents.length > 0) {
+      const firstMatchCoords = [
+        filteredEvents[0].latitude,
+        filteredEvents[0].longitude,
+      ];
+
+      this.map.setView(firstMatchCoords, 14);
+    }
+
     this.renderEvents(filteredEvents);
+    this.listEvents(filteredEvents);
   }
 }
 
