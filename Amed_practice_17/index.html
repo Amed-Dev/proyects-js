@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" class="css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.freepik.com/512/6451/6451492.png"
+      type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <main>
+      <section id="appBg">
+        <form name="calculator">
+          <input
+            type="textfield"
+            name="ans"
+            value="0"
+            autocomplete="off"
+            readonly />
+          <br />
+          <button type="reset" value="C" class="operator">C</button>
+          <button type="button" value="⌫" class="operator">
+            <i class="fa-solid fa-delete-left"></i>
+          </button>
+          <button type="button" value="%" class="operator">%</button>
+          <button type="button" value="÷" class="operator">÷</button>
+          <br />
+          <button type="button" value="7" class="number">7</button>
+          <button type="button" value="8" class="number">8</button>
+          <button type="button" value="9" class="number">9</button>
+          <button type="button" value="×" class="operator">×</button>
+          <br />
+          <button type="button" value="4" class="number">4</button>
+          <button type="button" value="5" class="number">5</button>
+          <button type="button" value="6" class="number">6</button>
+          <button type="button" value="-" class="operator">-</button>
+          <br />
+          <button type="button" value="3" class="number">3</button>
+          <button type="button" value="2" class="number">2</button>
+          <button type="button" value="1" class="number">1</button>
+          <button type="button" value="+" class="operator">+</button>
+          <br />
+          <button type="button" value="0" class="number">0</button>
+          <button type="button" value="." class="number">.</button>
+          <button type="button" value="=" class="result">=</button>
+        </form>
+      </section>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
